@@ -14,8 +14,8 @@ namespace SmallCommitsWorkshop.Controllers {
 			m_usersContext = usersContext;
 
 			if( !m_usersContext.Users.Any() ) {
-				m_usersContext.Users.Add( new User() { Id = 169, UserName = "D2LSupport" } );
-				m_usersContext.Users.Add( new User() { Id = 175, UserName = "user1" } );
+				m_usersContext.Users.Add( new User() { Id = 169, UserName = "D2LSupport", IsActive = true } );
+				m_usersContext.Users.Add( new User() { Id = 175, UserName = "user1", IsActive = false } );
 				m_usersContext.SaveChanges();
 			}
 		}
